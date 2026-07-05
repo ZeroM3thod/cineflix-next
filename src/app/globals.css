@@ -580,10 +580,9 @@ input ~ .checked-radio-bg {
   margin-left: 5px;
 }
 
-.movie-card ion-icon {
+.movie-card .cf-ic {
   font-size: 16px;
   display: block;
-  --ionicon-stroke-width: 50px;
 }
 
 .movie-card .play {
@@ -593,9 +592,9 @@ input ~ .checked-radio-bg {
   transform: translate(-50%, -50%) scale(var(--scale));
 }
 
-.movie-card .play ion-icon {
+.movie-card .play .cf-ic {
   font-size: 60px;
-  --ionicon-stroke-width: 20px;
+  stroke-width: 1;
 }
 
 .movie-card:hover :is(.bookmark, .rating, .play) { --scale: 1; }
@@ -721,10 +720,9 @@ input ~ .checked-radio-bg {
   color: var(--off-white);
 }
 
-.sidebar-meta ion-icon {
+.sidebar-meta .cf-ic {
   font-size: 13px;
   color: var(--yellow);
-  --ionicon-stroke-width: 50px;
 }
 
 .sidebar-dot { opacity: 0.4; margin: 0 2px; }
@@ -848,9 +846,9 @@ input ~ .checked-radio-bg {
   z-index: 10;
 }
 
-.live-card .play ion-icon {
+.live-card .play .cf-ic {
   font-size: 60px;
-  --ionicon-stroke-width: 20px;
+  stroke-width: 1;
 }
 
 .live-card:hover .play {
@@ -914,7 +912,7 @@ footer {
 
 .social-link a { display: inline-block; }
 
-.social-link ion-icon {
+.social-link .cf-ic {
   font-size: 25px;
   margin-right: 20px;
 }
@@ -1053,8 +1051,8 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
   .movie-card .bookmark { left: 8px; }
   .movie-card .rating { right: 8px; }
   .movie-card .rating span { font-size: 10px; margin-left: 3px; }
-  .movie-card ion-icon { font-size: 13px; }
-  .movie-card .play ion-icon { font-size: 34px; }
+  .movie-card .cf-ic { font-size: 13px; }
+  .movie-card .play .cf-ic { font-size: 34px; }
 
   .movies-sidebar { display: none; }
 
@@ -1111,8 +1109,8 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
   .movie-card .bookmark { left: 6px; }
   .movie-card .rating { right: 6px; }
   .movie-card .rating span { font-size: 9px; margin-left: 2px; }
-  .movie-card ion-icon { font-size: 11px; }
-  .movie-card .play ion-icon { font-size: 28px; }
+  .movie-card .cf-ic { font-size: 11px; }
+  .movie-card .play .cf-ic { font-size: 28px; }
 
   .category-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 

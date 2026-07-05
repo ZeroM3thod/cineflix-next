@@ -1,4 +1,60 @@
 import HeroCarousel from "@/components/HeroCarousel";
+import { Bookmark, Star, PlayCircle } from "lucide-react";
+
+function BrandIcon({ children }: { children: React.ReactNode }) {
+  return (
+    <svg
+      className="cf-ic"
+      width="1em"
+      height="1em"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      {children}
+    </svg>
+  );
+}
+
+function FacebookIcon() {
+  return (
+    <BrandIcon>
+      <path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z" />
+    </BrandIcon>
+  );
+}
+
+function TwitterIcon() {
+  return (
+    <BrandIcon>
+      <path d="M22 5.9c-.7.3-1.5.5-2.4.7.9-.5 1.5-1.3 1.8-2.3-.8.5-1.7.8-2.6 1a4.1 4.1 0 0 0-7 3.7A11.6 11.6 0 0 1 3.4 4.6a4.1 4.1 0 0 0 1.3 5.5c-.7 0-1.3-.2-1.9-.5v.1c0 2 1.4 3.6 3.3 4a4.1 4.1 0 0 1-1.8.1 4.1 4.1 0 0 0 3.8 2.8A8.2 8.2 0 0 1 2 18.3a11.6 11.6 0 0 0 6.3 1.8c7.5 0 11.6-6.2 11.6-11.6v-.5c.8-.6 1.5-1.3 2.1-2.1z" />
+    </BrandIcon>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <BrandIcon>
+      <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4.1.6c-.8.3-1.4.7-2.1 1.4C1.3 2.7.9 3.3.6 4.1.3 4.8.1 5.7.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c0 1.3.2 2.2.5 2.9.3.8.7 1.4 1.4 2.1.7.7 1.3 1.1 2.1 1.4.7.3 1.6.5 2.9.5 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3 0 2.2-.2 2.9-.5.8-.3 1.4-.7 2.1-1.4.7-.7 1.1-1.3 1.4-2.1.3-.7.5-1.6.5-2.9.1-1.3.1-1.7.1-5s0-3.7-.1-5c0-1.3-.2-2.2-.5-2.9-.3-.8-.7-1.4-1.4-2.1-.7-.7-1.3-1.1-2.1-1.4-.7-.3-1.6-.5-2.9-.5C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 0 0-2.9 1.4 1.4 0 0 0 0 2.9z" />
+    </BrandIcon>
+  );
+}
+
+function TikTokIcon() {
+  return (
+    <BrandIcon>
+      <path d="M16.5 3c.3 2.1 1.5 3.4 3.5 3.6v2.4c-1.2.1-2.3-.2-3.5-.8v5.9c0 3.4-2.5 5.9-5.8 5.9A5.7 5.7 0 0 1 5 14.5c0-3.2 2.9-5.6 6.2-5.1v2.6c-.4-.1-.9-.2-1.3-.2-1.5 0-2.6 1.1-2.6 2.7 0 1.5 1.1 2.7 2.6 2.7 1.6 0 2.7-1.2 2.7-2.9V3h3.9z" />
+    </BrandIcon>
+  );
+}
+
+function YoutubeIcon() {
+  return (
+    <BrandIcon>
+      <path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 4.9 12 4.9 12 4.9s-7 0-8.9.5A3 3 0 0 0 1 7.5C.5 9.4.5 12 .5 12s0 2.6.5 4.5a3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-4.5.5-4.5s0-2.6-.5-4.5zM9.8 15.5V8.5l5.7 3.5-5.7 3.5z" />
+    </BrandIcon>
+  );
+}
 
 export default function Home() {
   return (
@@ -272,20 +328,20 @@ export default function Home() {
               OTP.
             </p>
             <div className="social-link">
-              <a href="#">
-                <ion-icon name="logo-facebook" />
+              <a href="#" aria-label="Facebook">
+                <FacebookIcon />
               </a>
-              <a href="#">
-                <ion-icon name="logo-twitter" />
+              <a href="#" aria-label="Twitter">
+                <TwitterIcon />
               </a>
-              <a href="#">
-                <ion-icon name="logo-instagram" />
+              <a href="#" aria-label="Instagram">
+                <InstagramIcon />
               </a>
-              <a href="#">
-                <ion-icon name="logo-tiktok" />
+              <a href="#" aria-label="TikTok">
+                <TikTokIcon />
               </a>
-              <a href="#">
-                <ion-icon name="logo-youtube" />
+              <a href="#" aria-label="YouTube">
+                <YoutubeIcon />
               </a>
             </div>
           </div>
@@ -354,14 +410,14 @@ function MovieCard({
         <img src={img} alt="" className="card-img" />
         <div className="card-overlay">
           <div className="bookmark">
-            <ion-icon name="bookmark-outline" />
+            <Bookmark className="cf-ic" size="1em" />
           </div>
           <div className="rating">
-            <ion-icon name="star-outline" />
+            <Star className="cf-ic" size="1em" />
             <span>{rating}</span>
           </div>
           <div className="play">
-            <ion-icon name="play-circle-outline" />
+            <PlayCircle className="cf-ic" size="1em" />
           </div>
         </div>
       </div>
@@ -396,7 +452,7 @@ function SidebarCard({
       <div className="sidebar-info">
         <h4 className="sidebar-title">{title}</h4>
         <div className="sidebar-meta">
-          <ion-icon name="star-outline" />
+          <Star className="cf-ic" size="1em" />
           <span>{rating}</span>
           <span className="sidebar-dot">/</span>
           <span>{year}</span>
@@ -444,7 +500,7 @@ function LiveCard({
         <div className="live-badge">LIVE</div>
         <div className="total-viewers">{viewers}</div>
         <div className="play">
-          <ion-icon name="play-circle-outline" />
+          <PlayCircle className="cf-ic" size="1em" />
         </div>
       </div>
       <div className="card-body">
