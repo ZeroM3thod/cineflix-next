@@ -40,7 +40,7 @@
    * Spacing 
    */
 
-  --px: 120px;
+  --px: 48px;
 
 }
 
@@ -530,7 +530,7 @@ input ~ .checked-radio-bg {
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 24px;
   margin-bottom: 60px;
 }
@@ -970,7 +970,7 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
 @media screen and (max-width: 1200px) {
 
   :root {
-    --px: 80px;
+    --px: 40px;
   }
 
   .category-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
@@ -1003,7 +1003,7 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
 @media screen and (max-width: 1024px) {
 
   :root {
-    --px: 60px;
+    --px: 32px;
   }
 
   .k-hero-inner { padding: 0 60px; }
@@ -1051,7 +1051,7 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
   .movies { margin-top: 40px; }
 
   .movies-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
   }
 
