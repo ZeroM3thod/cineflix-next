@@ -28,17 +28,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
-        {children}
-        <script
-          type="module"
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        />
-        <script
-          noModule
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
