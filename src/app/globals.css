@@ -273,10 +273,22 @@ nav { margin-right: 200px; }
   position: absolute;
   inset: 0;
   opacity: 0;
+  z-index: 0;
   transition: opacity .7s ease;
   pointer-events: none;
 }
-.k-hero-slide.active{ opacity: 1; pointer-events: auto; }
+.k-hero-slide.active{ opacity: 1; z-index: 1; pointer-events: auto; }
+
+/* Only the media layer crossfades. Text content of inactive slides is hidden
+   instantly so titles/meta/descriptions can never overlap during transitions. */
+.k-hero-slide:not(.active) .k-hero-content{
+  opacity: 0;
+  visibility: hidden;
+}
+.k-hero-slide.active .k-hero-content{
+  opacity: 1;
+  visibility: visible;
+}
 
 .k-hero-bg{
   position: absolute;
