@@ -518,7 +518,7 @@ input ~ .checked-radio-bg {
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 24px;
   margin-bottom: 60px;
 }
@@ -698,7 +698,7 @@ input ~ .checked-radio-bg {
   object-fit: cover;
 }
 
-.sidebar-info { min-width: 0; }
+.sidebar-info { flex: 1; min-width: 0; }
 
 .sidebar-title {
   font-size: var(--fs-sm);
